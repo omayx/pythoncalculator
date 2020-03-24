@@ -1,0 +1,24 @@
+islem = int(input("Aşağıdaki işlemlerden birini seçiniz.\n1-Toplama\n2-Çıkarma\n\nLütfen işlem seçiniz: "))
+if islem ==1 or islem ==2:
+
+    sayi1 = int(input("Lütfen ilk sayıyı giriniz."))
+    sayi2 = int(input("Lütfen ikinci sayıyı giriniz."))
+
+    textIlkSayi = "ilk sayı: "
+    textIkinciSayi = ", ikinci sayı: "
+    textIslem = " için "
+    textSonuc = " işlemin sonucu "
+
+    if islem == 1:
+        sonuc = sayi1 + sayi2
+        textIslem += "toplama"
+    elif islem == 2:
+        sonuc = sayi1 - sayi2
+        textIslem += "çıkarma"
+    else :
+        print("Yanlış seçim yaptınız.")
+
+    print(textIlkSayi+ str(sayi1)+ textIkinciSayi+ str(sayi2)+ textIslem+ textSonuc+ str(sonuc))
+
+else :
+    print("Yanlış seçim yaptınız.")
